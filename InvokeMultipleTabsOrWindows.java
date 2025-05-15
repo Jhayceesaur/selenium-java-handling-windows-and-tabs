@@ -14,7 +14,7 @@ public class InvokeMultipleTabsOrWindows
 		driver.manage().window().maximize();
 		driver.get("https://rahulshettyacademy.com/angularpractice/");
 		driver.switchTo().newWindow(WindowType.TAB); //Opening a new tab
-		driver.switchTo().newWindow(WindowType.WINDOW); //Opening a new window
+		//driver.switchTo().newWindow(WindowType.WINDOW); //Opening a new window
 		
 		Set <String> tabs = driver.getWindowHandles(); //Set method for handling windows and tabs
 		Iterator <String> it = tabs.iterator(); //Iterator method to store each tab
